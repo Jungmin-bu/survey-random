@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Redirect</title>
+
+<script>
+window.onload = function () {
+
+    const surveys = [
+        "https://app.onlinesurveys.jisc.ac.uk/s/bournemouth/msc-a",
+        "https://app.onlinesurveys.jisc.ac.uk/s/bournemouth/msc-b"
+    ];
+
+    const chosen = surveys[Math.floor(Math.random() * surveys.length)];
+
+    window.location.replace(chosen);
+};
+</script>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+text-align:center;
+padding-top:80px;
+background:#f8f9fa;
+color:#333;
+}
+.box{
+max-width:500px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+<h2>Survey Loading...</h2>
+<p>You are being securely redirected to the study survey.</p>
+<p>Please wait a moment.</p>
+</div>
+
+</body>
+</html>
