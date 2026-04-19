@@ -16,6 +16,11 @@ window.onload = function () {
     const chosen = surveys[Math.floor(Math.random() * surveys.length)];
 
     window.location.replace(chosen);
+
+    setTimeout(function() {
+        document.querySelector('.box').innerHTML = 
+        '<h2>Redirect failed</h2><p>Please <a href="' + chosen + '">click here</a> to access the survey.</p>';
+    }, 3000);
 };
 </script>
 
